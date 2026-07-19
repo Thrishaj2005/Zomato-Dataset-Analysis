@@ -1,25 +1,29 @@
 # Zomato-Dataset-Analysis
 Restaurant Rating Prediction using Machine Learning and NLP with Zomato Dataset. Includes EDA, text preprocessing, TF-IDF vectorization, feature engineering, regression models, hyperparameter tuning.
 
-# 🍽️ Restaurant Rating Prediction using Machine Learning
-
-## 📌 Project Overview
-This project aims to predict restaurant ratings using Machine Learning and Natural Language Processing (NLP) techniques. The project combines restaurant information with customer reviews from the Zomato dataset to analyze customer preferences and build accurate prediction models.
+## 📖 Overview
+This project analyzes the Zomato Restaurant Dataset using Exploratory Data Analysis (EDA), Natural Language Processing (NLP), and Machine Learning techniques. The goal is to understand restaurant characteristics, customer reviews, and predict restaurant ratings based on restaurant metadata and user reviews.
 
 ---
 
-## 🎯 Business Objective
-Restaurant ratings influence customer decisions and business growth. The objective of this project is to predict restaurant ratings based on restaurant details and customer reviews, helping restaurant owners improve their services and assisting customers in choosing restaurants.
+## 🎯 Objectives
+- Analyze restaurant information and customer reviews.
+- Perform data cleaning and preprocessing.
+- Apply NLP techniques to process review text.
+- Engineer and select important features.
+- Build and evaluate machine learning models for restaurant rating prediction.
 
 ---
 
 ## 📂 Dataset
-The project uses two datasets:
 
-- **Zomato Restaurant Dataset**
-- **Restaurant Reviews Dataset**
+This project uses two datasets:
 
-These datasets include information such as:
+- **Zomato Restaurant names and Metadata.csv**
+- **Zomato Restaurant reviews.csv**
+
+The datasets contain information such as:
+
 - Restaurant Name
 - Location
 - Cuisines
@@ -34,6 +38,7 @@ These datasets include information such as:
 ## 🛠️ Technologies Used
 
 - Python
+- Google Colab
 - Pandas
 - NumPy
 - Matplotlib
@@ -41,18 +46,16 @@ These datasets include information such as:
 - Scikit-learn
 - NLTK
 - TextBlob
-- TF-IDF Vectorizer
-- Google Colab
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis
 
-The following analyses were performed:
+The project includes:
 
-- Missing Value Treatment
-- Duplicate Removal
 - Data Cleaning
+- Missing Value Handling
+- Duplicate Removal
 - Univariate Analysis
 - Bivariate Analysis
 - Correlation Analysis
@@ -63,7 +66,7 @@ The following analyses were performed:
 
 ## 📝 Text Preprocessing
 
-The review text was preprocessed using:
+The customer reviews were preprocessed using:
 
 - Expand Contractions
 - Lower Casing
@@ -76,18 +79,6 @@ The review text was preprocessed using:
 - Lemmatization
 - Part-of-Speech (POS) Tagging
 - TF-IDF Vectorization
-
----
-
-## ⚙️ Feature Engineering
-
-New features were created, including:
-
-- Cost Category
-- Rating Category
-- Date-based Features (Year, Month, Day)
-
-Categorical variables were encoded using Label Encoding.
 
 ---
 
@@ -106,61 +97,53 @@ Model performance was evaluated using:
 - Root Mean Squared Error (RMSE)
 - R² Score
 
-Cross-validation and hyperparameter tuning were performed to improve model performance.
+Cross-validation and hyperparameter tuning were also performed.
 
 ---
 
-## 📈 Results
-
-Among the implemented models, the Random Forest Regressor achieved the best overall performance with high prediction accuracy and strong generalization capability.
-
----
-
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
-Restaurant-Rating-Prediction/
+Zomato-Dataset-Analysis/
 │
-├── Restaurant_Rating_Prediction.ipynb
 ├── README.md
-├── requirements.txt
-├── zomato.csv
-├── reviews.csv
-└── images/
+├── Zomato_Project.ipynb
+├── Zomato Restaurant names and Metadata.csv
+└── Zomato Restaurant reviews.csv
 ```
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone this repository
+1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/Restaurant-Rating-Prediction.git
+git clone https://github.com/Thrishaj2005/Zomato-Dataset-Analysis.git
 ```
 
-2. Install dependencies
+2. Install the required libraries:
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn nltk textblob
 ```
 
-3. Open the notebook
-
-```bash
-jupyter notebook
-```
-
-or upload the notebook to **Google Colab** and run all cells.
+3. Open **Zomato_Project.ipynb** in Jupyter Notebook or Google Colab and run all cells.
 
 ---
 
-## 📌 Future Improvements
+## 📈 Results
 
-- Deep Learning models for rating prediction
-- Sentiment Analysis
-- Restaurant Recommendation System
-- Web Application Deployment using Streamlit or Flask
+The project successfully predicts restaurant ratings using machine learning models. Feature engineering, NLP preprocessing, and TF-IDF vectorization improved the model's ability to learn meaningful patterns from restaurant reviews and metadata.
+
+---
+
+## 🔮 Future Scope
+
+- Deep Learning-based rating prediction
+- Restaurant recommendation system
+- Sentiment analysis dashboard
+- Web application deployment using Streamlit or Flask
 
 ---
 
@@ -170,6 +153,8 @@ or upload the notebook to **Google Colab** and run all cells.
 
 M.Sc. Data Science  
 VIT Vellore
+
+GitHub: https://github.com/Thrishaj2005
 
 ---
 
